@@ -1,0 +1,81 @@
+/* Tambahkan breakpoint max-width: 1000px */
+@media all and (max-width: 1000px) {
+	.lesson {
+		width: 50%;
+		margin-bottom: 50px;
+	}
+
+
+	.konten-tumb {
+		width: 50%;
+	}
+
+	.ui	{
+		width: 50%;
+	}
+
+	h2	{
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.text-content {
+		font-size: 12px;
+	}
+
+	.home, .profil, .contact {
+	float:right;
+	font-size: 16px;
+	}
+
+}
+
+/* Tambahkan breakpoint max-width: 670px */
+@media all and (max-width: 670px) {
+	
+	.lesson {
+		width: 100%;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	.konten-tumb {
+		width: 100%
+	}
+
+	h2	{
+		font-size: 16px;
+	}
+
+	 p {
+		font-size: 12px;
+	}
+
+	.text-content {
+		font-size: 11px;
+	}
+
+	.home, .profil, .contact {
+	float:right;
+	font-size: 12px;
+	}
+
+	.header-right {
+		display: none;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+	.ui{
+		width:40%;
+		column-span: all;
+	}
+	
+
+}

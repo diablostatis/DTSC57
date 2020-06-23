@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+  <!-- favicons -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="atas">
+      <div class="header-left">
+        <img src="img/logo.png" alt="" class="logo" >
+        
+      </div>
+      
+      <span class="fa fa-bars menu-icon"></span>
+
+      <div class="header-right">
+        <a href="#ContactUs" class="home" class="data">Contact</a>
+        <a href="#" class="profil">Profil</a>
+        <a href="#" class="contact">Home</a>
+      </div>
+    </div>  
+  </header>
+    
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="img/header1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/header2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/header3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/header4.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+     }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+  </script>
+
+
+  <section id="reason">
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Advantage Features</h2>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="img/uang.png" width="225px" height="150px">   
+            </div>
+            <p>Hemat</p>
+            <p class="text-contents">Anda tidak perlu mengeluarkan nominal yang gila. </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="img/plan.png" width="225px" height="150px">  
+            </div>
+            <p>Rencana Menarik</p>
+            <p class="text-contents">Perencanaan perjalanan kami akan membuat anda tertarik mengikutinya hingga selesai.</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="img/sante.png" width="225px" height="150px">
+            </div>
+            <p>Nyaman</p>
+            <p class="text-contents">Kami selalu mengutamakan kenyamanan anda sehingga tidak perlu ragu menginginkan apapun.</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="img/senang.png" width="225px" height="150px">
+              </div>
+            <p>Berkesan</p>
+            <p class="text-contents">Kami menjamin anda akan memiliki kenangan yang indah setelah melewati perjalanan bersama kami.</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Apakah anda siap untuk berwisata bersama kami?</h2>
+          <h3>Ayo mulai tentukan rencana anda, kami akan menemani!</h3>
+        </div>
+        <span class="btn message">Daftar</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="destination">
+    <div class="konten-container">
+      <div class="headkonten">
+          <h2>Experience Our Destination</h2>
+      </div>
+      <div class="konten-tumb">
+        <img src="img/borobudur-tumb.jpg" class="tumbnail">
+        <h2>Candi Borobudur</h2>
+          <p class="text-konten">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><a href="#">View details >></a></p>
+        </div>
+        <div class="konten-tumb"> 
+        <img src="img/g-kerinci.jpg" class="tumbnail">
+        <h2>Gunung Kerinci</h2>
+          <p class="text-konten">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><a href="#">View details >></a></p>
+        </div>
+        <div class="konten-tumb">
+        <img src="img/rajaampat.jpg" class="tumbnail">
+        <h2>Raja Ampat</h2>
+          <p class="text-konten">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><a href="#">View details >></a></p>
+        </div>
+        <div class="konten-tumb">
+        <img src="img/toba.jpg" class="tumbnail">
+        <h2>Danau Toba</h2>
+          <p class="text-konten">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><a href="#">View details >></a></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  
+
+  <section id="ContactUs">
+    <div class="container contact-container">
+      <h3 class="contact-title">Get In Touch</h3>
+      <div class="contact-outer-wrapper">
+        <div class="form-wrap">
+          <p>Biodata</p>
+          <form action="#" method="post">
+            <div class="fname floating-label">
+              <input type="text" required class="floating-input" name="full name" />
+              <label for="title">Full Name</label>
+            </div>
+            <div class="email floating-label">
+              <input type="email" required class="floating-input" name="email" />
+              <label for="email">Email</label>
+            </div>
+            <div class="contact floating-label">
+              <input type="tel" class="floating-input" name="contact" />
+              <label for="email" required>Contact</label>
+            </div>
+            <div class="company floating-label">
+              <input type="text" class="floating-input" name="company" />
+              <label for="email">Company</label>
+            </div>
+            <div class="user-msg floating-label">
+              <textarea type="text" class="floating-input" name="Message"></textarea>
+              <label for="message" class="msg-label">Your Message</label>
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="address-block">
+            <p class="add-title">Contact Details</p>
+            <div class="c-detail">
+              <div class="c-icon"><i class="fas fa-address-book" aria-hidden="true"></i></div>
+              <div class="c-info">
+                <h4>Address</h4>
+                <p>Indonesian counrty</p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="c-icon"><i class="fas fa-phone-square" aria-hidden="true"></i></div>
+              <div class="c-info">
+                <h4>Mobile</h4>
+                <p><a href="tell:+628155525651">+628155525651</a></p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="c-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+              <div class="c-info">
+                <h4>Email</h4>
+                <p><a href="Traveler@gmail.com">traveler@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="deisgn">
+      <div class="container">
+        <h1>UI/UX DESAIN</h1>
+        <div class="box">
+          <div class="ui">
+            <img src="img/dani.jpeg" alt="" width="150px" height="150px" class="rounded-circle">
+            <p>Dhany Paraditya P A</p>
+          </div>
+          <div class="ui">
+            <img src="img/dinar.JPG" alt="" width="150px" height="150px" class="rounded-circle">
+            <p>Dinar Nurmantara Adjie</p>
+          </div>
+          <div class="ui">
+            <img src="img/dedi.jpeg" alt="" width="150px" height="150px" class="rounded-circle">
+           <p>Dedi Suryadi</p>
+          </div>
+          <div class="ui">
+            <img src="img/dewi.jpeg" alt="" width="150px" height="150px" class="rounded-circle">
+            <p>Dewi Risti A</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer id="Footer">
+      <div class="container text-center">
+        <div class="footer-text ">
+          <div class="copyright">
+            &copy;Team C-57
+          </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+              <div class="social-share">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          
+         </div>
+    </footer>
+
+</body>
+</html>
